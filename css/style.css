@@ -7,21 +7,25 @@ body {
 
 nav {
   display: flex;
-  padding: 1em 13em 0 3em;
+  padding: 0 13em 0 3em;
 }
 p {
   color: #c2bfd0;
   font-weight: 600;
-  font-size: vh;
+  font-size: 0.9em;
 }
 
 h1 {
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 1.6em;
+}
+
+h3 {
+  font-weight: 700;
 }
 
 .nav-link {
@@ -43,6 +47,7 @@ h2 {
   text-decoration: none;
   color: #d7d7d7;
   font-weight: 600;
+  font-size: 0.9em;
 }
 
 #logo {
@@ -77,22 +82,12 @@ h2 {
   padding: 15px 35px;
 }
 
-#bottom-button {
-  margin-top: 5vh;
-  max-width: 200px;
-  padding: 20px 45px;
-}
-
-.wrapper {
+#hero {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  padding: 0 10% 0 10%;
-  margin: 0 auto;
+  padding: 0 5% 0 5%;
   align-items: center;
-}
-
-#hero {
-  padding-top: 20vh;
+  padding-top: 15%;
 }
 
 #intro-text {
@@ -103,4 +98,66 @@ h2 {
   max-width: 100%;
   min-width: 50%;
   min-height: 50%;
+}
+
+#science {
+  padding: 20vh 0 20vh 0;
+  text-align: center;
+}
+
+#bottom-button {
+  margin-top: 10%;
+  max-width: 200px;
+  padding: 20px 45px;
+}
+
+#about {
+  display: grid;
+  align-items: center;
+  padding: 0 15% 10% 15%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 40% 60%;
+  grid-gap: 5%;
+}
+
+.about-img {
+  max-width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.about-text {
+  color: white;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+#box-a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#box-b {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+#box-c {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 0 5% 0 5%;
+}
+
+#box-d {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 0 5% 0 5%;
+}
+
+#science-link {
+  color: white;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 }
