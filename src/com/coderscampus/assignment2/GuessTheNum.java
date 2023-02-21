@@ -27,7 +27,7 @@ public class GuessTheNum {
 				turns = 0;
 				System.out.println("You win! The answer was " + answer);
 				return 0;
-			}else if((guess < 1)&&(guess > 100)){
+			}else if((guess < 1)||(guess > 100)){
 				System.out.println("That guess is out of bounds, try again: ");
 				guess = chooseNum(scanner);
 				turns--;
